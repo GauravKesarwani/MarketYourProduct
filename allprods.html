@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://getbootstrap.com/2.3.2/examples/hero.html -->
+<html lang="en" ng-app="prodApp">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    </style>
+
+        <!-- Custom styles for this template -->
+<!--    <link href="css/jumbotron.css" rel="stylesheet">-->
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="http://getbootstrap.com/2.3.2/assets/ico/favicon.png">
+
+
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/ngStorage.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+<!--<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '805007769533128',
+            xfbml      : true,
+            version    : 'v2.0'
+        });
+
+        FB.ui(
+                {
+                    method: 'share',
+                    href: 'https://developers.facebook.com/docs/'
+                }, function(response){});
+        //FB.login(function(){}, {scope: 'publish_actions'});
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>-->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=805007769533128&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="http://getbootstrap.com/2.3.2/examples/hero.html#">Project name</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="active"><a href="http://getbootstrap.com/2.3.2/examples/hero.html#">Home</a></li>
+                    <li><a href="http://getbootstrap.com/2.3.2/examples/hero.html#about">About</a></li>
+                    <li><a href="http://getbootstrap.com/2.3.2/examples/hero.html#contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="http://getbootstrap.com/2.3.2/examples/hero.html#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://getbootstrap.com/2.3.2/examples/hero.html#">Action</a></li>
+                            <li><a href="http://getbootstrap.com/2.3.2/examples/hero.html#">Another action</a></li>
+                            <li><a href="http://getbootstrap.com/2.3.2/examples/hero.html#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Nav header</li>
+                            <li><a href="http://getbootstrap.com/2.3.2/examples/hero.html#">Separated link</a></li>
+                            <li><a href="http://getbootstrap.com/2.3.2/examples/hero.html#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form pull-right">
+                    <input class="span2" type="text" placeholder="Email">
+                    <input class="span2" type="password" placeholder="Password">
+                    <button type="submit" class="btn">Sign in</button>
+                </form>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<div class="container" ng-controller="allprodController">
+
+    <!-- Example row of columns -->
+
+     <div class="row" ng-repeat="prod in allprods">
+       <!--  <div class="jumbotron">-->
+        <div id="pimg" class="col-md-3">
+            <img ng-src='{{prod.mypic}}'>
+        </div>
+
+        <div class="col-md-3">
+           <h4>{{prod.name}}</h4>
+           <h5> {{prod.desc}}</h5>
+            <br><br><br><br><br><br>
+        </div>
+        <div class="col-md-3">
+         <h5>$ {{prod.price}}</h5>
+            <br><br><br><br><br><br><br><br>
+        </div>
+         <div class="fb-share-button col-md-3" data-href="file:///C:/Users/Gaurav/Documents/Js/MarketProd/Toshiba.htm">share</div>
+
+     </div>
+    <!--</div>-->
+    <hr>
+
+    <footer>
+        <p>© Company 2013</p>
+    </footer>
+
+</div> <!-- /container -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+
+
+
+
+</body></html>

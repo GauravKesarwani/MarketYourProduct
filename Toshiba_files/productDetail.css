@@ -1,0 +1,142 @@
+/*Product Details*/
+
+#productcontroller h2 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#PDP_main {
+    width: 960px !important;
+    overflow: hidden;
+}
+
+#PDP_checkStockSearch {
+    margin: 3px 0;
+}
+
+.PDP_container {
+    margin: 30px auto 0 auto;
+    overflow: hidden;
+}
+
+.PDP_name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.PDP_image {
+    float: left;
+    width: 240px;
+}
+
+.PDP_detail_container {
+    float: left;
+    width: 540px;
+    margin-left: 28px;
+}
+
+.PDP_detail_container LI {
+    margin-left: -28px;
+}
+
+.PDP_detail {
+    line-height: 24px;
+    border-bottom: solid #EAEAEB thin;
+}
+
+.PDP_video_game_fields_container {
+    margin-top: 10px;
+}
+
+.PDP_music_fields, .PDP_movie_fields, .PDP_video_game_fields {
+    clear: both;
+    overflow: hidden;
+}
+
+.PDP_movie_fields .cast {
+    clear: both;
+    display: block;
+    line-height: 15px;
+}
+
+.PDP_music_fields DIV, .PDP_movie_fields DIV, .PDP_video_game_fields DIV {
+    float: left;
+    line-height: 24px;
+}
+
+.PDP_music_fields .label, .PDP_movie_fields .label, .PDP_video_game_fields .label {
+    font-weight: bold;
+    margin-right: 5px;
+    width: 35%
+}
+
+.PDP_synopsis {
+    margin-top: 30px;
+    *margin-top: 90px !important; /* notice the * before the property - shows in IE7 */
+    _margin-top: 90px !important; /* notice the _ before the property - shows in IE6 */
+}
+
+.PDP_synopsis_details, .PDP_crew_details {
+    margin-top: 10px;
+}
+
+.PDP_detail, .PDP_overview, .PDP_included_items, .PDP_features {
+    margin-bottom: 20px;
+    color: #49494A;
+    font-size: 8pt;
+}
+
+.PDP_form_error_message {
+    color: #AE1231;
+}
+
+.PDP_go_button {
+    vertical-align: bottom;
+}
+
+.specifications H2, .related_products_label H2 {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+.specification_white .label, .specification_colored .label {
+    font-weight: bold;
+}
+
+.specification_white DIV, .specification_colored DIV {
+    float: left;
+    width: 48%;
+    text-align: left;
+    background-color: transparent;
+    padding: 4px 4px;
+}
+
+.specification_colored {
+    background-color: #EEEEEE;
+    overflow: hidden;
+    clear: both;
+}
+
+#related_product_list_container, #accessories_list_container {
+    float: right;
+    clear: both;
+    width: 718px;
+    padding-top: 25px;
+    _float: left; /* notice the _ before the property - shows in IE6 */
+    *float: left; /* notice the * before the property - shows in IE7 */
+    _padding-left: 200px; /* notice the _ before the property - shows in IE6 */
+    *padding-left: 200px; /* notice the * before the property - shows in IE7 */
+}
+
+.related_products_label, .accessories_label {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+.check_stock_search_box_PDP {
+    color: #737474;
+}
+
+.form-error-field-PDP {
+    color: #737474;
+}

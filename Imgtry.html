@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<img id="mypic" src="imgs/LiveSafe.jpg">
+
+<script>
+    var mypic = document.getElementById("mypic");
+    mypic.addEventListener("load", function() {
+        var imgCanvas = document.createElement("canvas");
+        var imgContext = imgCanvas.getContext("2d");
+
+        imgCanvas.width = mypic.width;
+        imgCanvas.height = mypic.height;
+
+        imgContext.drawImage(mypic,0,0,mypic.width,mypic.height);
+        // Get canvas contents as a data URL
+        var imgAsDataURL = imgCanvas.toDataURL("imgs/png");
+
+        // Save image into localStorage
+        try {
+            localStorage.setItem("mypic", imgAsDataURL);
+        }
+        catch (e) {
+            console.log("Storage failed: " + e);
+        }
+    }, false);
+
+    })
+</script>
+</body>
+</html>

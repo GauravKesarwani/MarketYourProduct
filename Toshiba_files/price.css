@@ -1,0 +1,49 @@
+.price, .sale_price, .price_error, .price_unavailable {
+    width: 120px;
+    background-color: #EAEAEB;
+    color: #AE1231;
+    font-weight: bold;
+    float: right;
+    padding: 15px 10px;
+    height: 100px;
+}
+
+.price a, .sale_price a, .price_error a, .price_unavailable a, .regular_price a {
+    cursor: pointer;
+}
+
+.regular_price {
+    font-size: 12px;
+    font-weight: normal;
+    color: #49494a;
+}
+
+.regular_price IMG, .sale_price IMG {
+    padding-top: 6px;
+    cursor: pointer;
+}
+
+.price, .price_error, .sale_price {
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.price_error {
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.price_unavailable {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.minAdvertisedPrice {
+    font-weight: normal;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.map_disclaimer {
+    margin: 0 15px;
+}

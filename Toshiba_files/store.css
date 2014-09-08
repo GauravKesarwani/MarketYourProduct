@@ -1,0 +1,73 @@
+.store_locator_results {
+    float: left;
+    margin: 0 0 0 20px;
+    width: 712px;
+    _width: 650px !important; /* notice the _ before the property - shows in IE6 */
+    color: #49494a;
+    clear: both;
+    overflow: hidden;
+}
+
+.store_locator_results h5 {
+    background-color: #e7e7e7;
+    margin: 0;
+    font-size: 12px;
+    padding: 8px;
+}
+
+.store_locator_results p {
+    border-bottom: 1px solid #c3c4c4;
+    margin: 12px 0 12px 12px;
+}
+
+.store_locator_results a {
+    color: #004691;
+}
+
+#store_locator_text, #no_store {
+    font-size: 12px;
+    width: 425px;
+    padding: 8px;
+}
+
+#no_store {
+    color: #AE1231;
+}
+
+#storesMap a {
+    text-decoration: none !important;
+    text-align: center;
+}
+
+.form-error-label {
+    padding-left: 16px;
+    padding-top: 2px;
+    color: #AE1231;
+    font-weight: bold;
+    background: url("../../images/storeLocator/misc_error_small.gif") no-repeat;
+
+}
+
+.form-error-message span {
+    padding-left: 20px;
+    padding-top: 5px;
+    display: block;
+    height: 40px;
+    color: #AE1231;
+    clear:both;
+}
+
+.form-error-field {
+    background-color: #FFC;
+}
+
+#storesMap .pinStyle {
+    background: url("../../images/storeLocator/map_pin.png") no-repeat;
+    width: 26px;
+    height: 28px;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 7px;
+    position: relative;
+    bottom: 17px;
+}

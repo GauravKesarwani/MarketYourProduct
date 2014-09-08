@@ -1,0 +1,144 @@
+#back_soon {
+    width: 712px;
+    height: 279px;
+    float: left;
+    background: url("../../images/back_soon.jpg") repeat scroll 0 0 transparent;
+    margin-bottom: 10px;
+    margin-top: 7px;
+    border-bottom: 1px solid #c3c4c4;
+}
+
+#back_soon_text h1 {
+    font-family: "Arial";
+    font-size: 12px;
+    *font-size: 11px !important; /* notice the * before the property - shows in IE7 */
+    _font-size: 11px !important; /* notice the _ before the property - shows in IE6 */
+    color: #49494A;
+    margin: 65px 0 0 0;
+    line-height: 20px;
+}
+
+#back_soon_text {
+    font-size: 12px;
+    _font-size: 11px !important; /* notice the _ before the property - shows in IE6 */
+    color: #49494A;
+    float: right;
+    margin: 20px 16px 0 0;
+    width: 397px;
+}
+
+#back_soon_text p {
+    margin: 15px 0;
+    padding: 0;
+}
+
+#store_locator, #weekly_ad {
+    width: 349px;
+    border: 1px solid #c3c4c4;
+    float: left;
+    height: 169px;
+    font-size: 12px;
+    color: #49494a
+}
+
+#brands_services {
+    width: 710px;
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid #c3c4c4;
+    color: #49494A;
+    font-size: 12px;
+}
+
+#geek_squad {
+    background: url("../../images/geeks.jpg") no-repeat scroll 185px 73px transparent;
+    *background: url("../../images/geeks.jpg") no-repeat scroll 185px 88px transparent; /* notice the * before the property - shows in IE7 */
+    float: left;
+    height: 225px;
+    *height: 240px; /* notice the * before the property - shows in IE7 */
+    margin-top: 15px;
+    padding-left: 20px;
+    width: 267px;
+    border-right: 1px solid #CFD0D0;
+}
+
+#magnolia, #business_center {
+    width: 157px;
+    float: left;
+    margin-top: 15px;
+    padding: 0px 20px;
+}
+
+#magnolia {
+    border-right: 1px solid #CFD0D0;
+    width: 172px;
+    height: 225px;
+}
+
+#business_center p {
+    padding-top: 5px;
+    margin: 0px;
+}
+
+#store_locator h5, #weekly_ad h5, #brands_services h5 {
+    height: 19px;
+    background-color: #e7e7e7;
+    margin: 0;
+    font-size: 12px;
+    border-bottom: 1px solid #c3c4c4;
+    padding: 8px;
+    color: #49494a;
+    text-transform: uppercase;
+    font-family: Arial Black;
+}
+
+#store_locator {
+    margin-right: 10px;
+    display: inline;
+}
+
+#store_locator p {
+    float: left;
+    margin: 15px 0 5px 0;
+    *margin: 0 0 5px 0; /* notice the * before the property - shows in IE7 only */
+    width: 174px;
+}
+
+#weekly_ad p {
+    float: left;
+    margin: 20px 0 5px 0;
+    width: 140px;
+}
+
+.store_locator, #weekly_ad img {
+    padding: 25px 20px;
+    float: left;
+}
+
+.subcategory_links {
+    display: block;
+    background-color: #FFFFFF;
+}
+
+.subcategory_links a {
+    color: #004691;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 24px;
+    margin-left: 18px;
+}
+
+.subcategory_links a:hover {
+    text-decoration: underline !important;
+}
+
+.subcategory_links a:visited {
+    color: #7fa5c8;
+}
+
+.toggle_links {
+    font-family: Monospace;
+}
+

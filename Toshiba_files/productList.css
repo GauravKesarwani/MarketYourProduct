@@ -1,0 +1,152 @@
+#left_navigation_container {
+    float: left;
+    clear: both;
+}
+
+#product_list_container {
+    float: left;
+    width: 712px;
+    clear: both;
+}
+
+#pagination {
+    float: left;
+    padding-top: 3px;
+    color: #888888;
+}
+
+#pagination img {
+    border: none;
+    vertical-align: bottom;
+}
+
+.pagination_and_stock_search {
+    background-color: #e7e7e7;
+    margin: 0;
+    padding: 8px 10px 6px 6px;
+    overflow: hidden;
+    height: 21px;
+}
+
+#page_count {
+    color: #737474;
+    display: inline;
+}
+
+#sort {
+    float: right;
+}
+
+#sort label {
+    padding-right: 5px;
+    font-weight: bold;
+    color: #888888;
+}
+
+.hideSort {
+    visibility: hidden;
+    display: none;
+}
+
+.product {
+    border-top: 1px solid #EAEAEB;
+    clear: both;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.product_unavailable {
+    color: #AE1231;
+    clear: both;
+    height: 100px;
+    padding-top: 23px;
+}
+
+.image, .details {
+    padding: 0 10px;
+    float: left;
+}
+
+.image {
+    width: 140px;
+    min-height: 100px;
+}
+
+.image IMG {
+    max-width: 140px;
+    max-height: 140px;
+}
+
+.details {
+    width: 390px;
+}
+
+.map_product_details {
+    width: 560px;
+}
+
+.empty_category {
+    float: left !important;
+    margin: 23px 0;
+    color: #AE1231;
+    *padding-left: 10px !important; /* notice the * before the property - shows in IE7 */
+    _padding-left: 10px !important; /* notice the _ before the property - shows in IE6 */
+}
+
+.check_stock_search_container {
+    padding: 12px 0 0 18px;
+    *padding: 0 0 0 18px; /* notice the * before the property - shows in IE7 only */
+}
+
+.check_stock_label, .check_stock_search_box, .check_stock_submit_button {
+    float: left;
+    padding-right: 3px;
+}
+
+.check_stock_search_box input {
+    color: #737474;
+    margin-bottom: 12px;
+    *margin-right: 6px; /* notice the * before the property - shows in IE7 only */
+}
+
+.form-error-message {
+    color: #AE1231;
+    /*float: left;
+    padding: 0 0 12px 18px;
+    width: 200px;*/
+}
+
+.name, .map_product_name {
+    font-size: 13px;
+    font-weight: bold;
+    color: #004691;
+    line-height: 17px;
+}
+
+.map_product_name {
+    width: 230px;
+    float: left;
+}
+
+.identifiers {
+    color: #49494a;
+    line-height: 13px;
+    padding: 5px 0;
+}
+
+.description, .reviews {
+    padding: 5px 0;
+}
+
+.storeAvailability a {
+    padding-right: 10px;
+}
+
+.storeAvailability p {
+    color: #49494a;
+    margin-bottom: 0;
+}
+
+.storeAvailability img {
+    border: none;
+}

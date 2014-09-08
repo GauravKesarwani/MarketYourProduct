@@ -1,0 +1,40 @@
+#pname{
+	height: 35px;
+	width: 600px;
+}
+
+#pprice {
+	height: 35px;
+	width: 195px;
+}
+
+#pdesc {
+	height: 200px;
+	width: 800px;
+}
+
+#uploadpimg1 {
+	display: none;
+}
+
+#uploadpimg2 {
+    display: none;
+}
+#uploadpimg3 {
+    display: none;
+}
+.pimg {
+	width: 200px;
+	height: 200px;
+}
+
+#pimg {
+    background-color: #ffffff;
+}
+
+.bgcolor {
+    background-color: #B3B3B3;
+    margin: 20px;
+    width: auto;
+    height: auto;
+}
